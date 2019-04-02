@@ -68,7 +68,7 @@ def SVMClassifier(X,y):
     y_pred_proba = clf.predict_proba(X_test)[::, 1]
     return pred,y_pred_proba,y_test
 
-files = ['closedLeftEyes/*jpg', 'closedRightEyes/*jpg', 'openLeftEyes/*jpg', 'openRightEyes/*jpg']
+files = ['closedLeftEyes/*jpg', 'closedRightEyes/*jpg', 'openLeftEyes/*jpg', 'opengit RightEyes/*jpg']
 X, y = getData(files)
 predictionSVM,y_pred_probaSVM,y_testSVM = SVMClassifier(X,y)
 getMetrics(y_testSVM,y_pred_probaSVM,predictionSVM,'SVM')
